@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AgriFert | Innovative farm solutions</title>
+    <style>/* Center the product list and add some margin */
+   
+  
+        /* Add some padding and a light gray background to each product */
+        #navv  {
+          padding: 20px;
+          /* background-color: hsl(128, 28%, 53%); */
+          border-radius: 10px;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          margin: 10px;
+          
+        }
+
+        .navbar ul a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+        
+        #pro {
+            animation: slideInFromBottom 1s ease-in;
+            border-radius: 10px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+        }
+        
+        /* Style the product image */
+        img {
+          display: block;
+          margin: 0 auto;
+          max-width: 100%;
+          height: auto;
+          
+        }
+        
+        /* Style the product title and price */
+        h3, p {
+          margin: 10px 0
+        }
+        
+        /* Style the button to show/hide the description */
+        button {
+          padding: 10px;
+          background-color: #746733;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-bottom: 10px;
+        }
+        
+        /* Style the product description */
+        p.description {
+          display: none;
+          margin-top: 10px;
+        }
+
+
+        #mc {
+  color: #fff;
+
+}
+#mc a{
+  color: #fff;
+}
+#mc h3{
+  color: #fff;
+}
+        </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar" style="background-color: hsl(129,59%,40%);">
+        <div class="container flex" >
+            <h1 class="logo"><a href="index.html"> <i class="fas fa-leaf fa-1x"></i>AgriFert.</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>   
+                    <li><a href="docs.html">Products</a></li>
+                    <li><a href="features.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Head -->
+    <section class="docs-head bg-primary py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="xl">Products</h1>
+                <p class="lead">
+                    Fertilizing for a greener world.
+                </p>
+            </div>
+            <img src="images/docs.png" alt="">
+        </div>
+    </section>
+
+    <!-- Docs main -->
+    <section class="docs-main my-4" >
+        <div class="container grid" id="mc" style="background-color: #ece9d6;">
+            <div class="card bg-light p-3" style="background-color: hsl(129,59%,40%);">
+                <h3 class="my-2"><a href="docs.html" id="mylink">Products</a></h3>
+                <h3 class="my-2"><a href="concerns.html">Concerns</a></h3>
+                <h3 class="my-2">Crops</h3>
+                <nav>
+                    <ul>
+                        <li><a href="rabi.html">Rabi</a></li>
+							<li><a href="kharif.html">Kharif</a></li>
+                    </ul>
+                </nav>
+                
+                <h3 class="my-2">Dealers</h3>
+                <nav>
+                    <ul>
+                        <li><a href="punjab.html">Punjab</a></li>
+							<li><a href="sindh.html">Sindh</a></li>
+							<li><a href="kpk.html">KPK</a></li>
+							<li><a href="balchistan.html">Balochistan</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="card" id="myDiv" style="background-color:#a09873;">
+                <div id="pro" style="background-color: #d5caa0;">
+                    
+                    <h3>Water Scarcity:</h3>
+                    <p>Water scarcity is a significant challenge for farmers in many parts of Pakistan. Limited access to irrigation water affects crop yields and can lead to crop failures. Insufficient water availability, coupled with inefficient irrigation practices and climate change, puts pressure on farmers to manage their water resources effectively.</p>
+                    <button onclick="toggleDescription('description1')">Show More</button>
+                    <p id="description1" style="display:none">
+                        
+                        Farmer Education and Training: Continuous education and training programs can help farmers learn about the latest water-saving techniques, best practices, and technologies. Extension services, workshops, and collaborations with agricultural experts can provide valuable insights and guidance.
+                        
+                    </p>
+                    
+                </div >
+                <div id="pro" style="background-color: #d5caa0;">
+                    
+                    <h3>Climate Change:</h3>
+                    <p>Pakistan is experiencing the impacts of climate change, including irregular rainfall patterns, increased temperatures, and extreme weather events such as droughts and floods. These changes disrupt agricultural cycles, affect crop production, and create uncertainties for farmers in terms of timing, water availability, and pest management.</p>
+                    <button onclick="toggleDescription('description1')">Show More</button>
+                    <p id="description1" style="display:none">Description of Product 1</p>
+                </div >
+                <div id="pro" style="background-color: #d5caa0;">
+                    
+                    <h3>Land Degradation: </h3>
+                    <p>Land degradation, including soil erosion, salinity, and waterlogging, poses a significant challenge for farmers in Pakistan. Overuse of agricultural inputs, improper land management practices, and water-related issues contribute to the degradation of fertile land, reducing crop productivity and threatening long-term sustainability.</p>
+                    <button onclick="toggleDescription('description1')">Show More</button>
+                    <p id="description1" style="display:none">Description of Product 1</p>
+                </div >
+                <div id="pro" style="background-color: #d5caa0;">
+                    
+                    <h3>Lack of Modern Farming Techniques:</h3>
+                    <p>Many farmers in Pakistan still rely on traditional farming practices and lack access to modern agricultural techniques, technologies, and equipment. Limited knowledge about advanced farming methods, precision agriculture, and mechanization hinders productivity improvements and efficiency gains.</p>
+                    <button onclick="toggleDescription('description1')">Show More</button>
+                    <p id="description1" style="display:none">Description of Product 1</p>
+                </div >
+                <div id="pro" style="background-color: #d5caa0;">
+                    
+                    <h3>Access to Credit and Financial Services:</h3>
+                    <p>Farmers often face challenges in accessing credit and financial services, making it difficult for them to invest in modern farming inputs, equipment, and technologies. Limited access to affordable credit and insurance products leaves farmers vulnerable to risks and reduces their ability to adopt innovative practices and technologies.</p>
+                    <button onclick="toggleDescription('description1')">Show More</button>
+                    <p id="description1" style="display:none">Description of Product 1</p>
+                </div >
+                <div id="pro" style="background-color: #d5caa0;">
+                    
+                    <h3>Market Access and Price Volatility:</h3>
+                    <p>Farmers in Pakistan often struggle with accessing fair and stable markets for their produce. Lack of market infrastructure, price volatility, and middlemen influence create uncertainties and affect the profitability of farming. Improved market linkages and value chain development can help address these concerns.</p>
+                    <button onclick="toggleDescription('description1')">Show More</button>
+                    <p id="description1" style="display:none">Description of Product 1</p>
+                </div >
+                <div id="pro" style="background-color: #d5caa0;">
+                    
+                    <h3>Pests and Diseases: </h3>
+                    <p>Crop pests and diseases pose a constant threat to agricultural production. Farmers face challenges in identifying and managing pest and disease outbreaks effectively. Limited access to information, technical knowledge, and affordable pesticides and treatments impact crop health and yields.</p>
+                    <button onclick="toggleDescription('description1')">Show More</button>
+                    <p id="description1" style="display:none">Description of Product 1</p>
+                </div >
+                <div id="pro" style="background-color: #d5caa0;">
+                    
+                    <h3>Lack of Agricultural Extension Services: </h3>
+                    <p>Limited availability and effectiveness of agricultural extension services restrict farmers' access to expert advice, modern farming techniques, and knowledge-sharing platforms. Strengthening extension services can enhance farmers' capacity to adopt best practices and address emerging challenges.</p>
+                    <button onclick="toggleDescription('description1')">Show More</button>
+                    <p id="description1" style="display:none">Description of Product 1</p>
+                </div >
+                
+                
+                <script>
+                    // JavaScript function to toggle product descriptions
+                    function toggleDescription(descriptionId) {
+                        var description = document.getElementById(descriptionId);
+                        var button = description.previousElementSibling;
+                        if (description.style.display === 'none') {
+                            description.style.display = 'block';
+                            button.innerText = 'Hide Description';
+                        } else {
+                            description.style.display = 'none';
+                            button.innerText = 'Show Description';
+                        }
+                    }
+                </script>
+
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>AgriFert.</h1>
+                <p>Copyright &copy; 2020</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="docs.html">Products</a></li>
+                    <li><a href="features.html">About Us</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

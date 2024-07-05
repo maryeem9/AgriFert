@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+ <style>/* Center the product list and add some margin */
+   
+  
+    /* Add some padding and a light gray background to each product */
+    div {
+      padding: 20px;
+      background-color: hsl(123, 26%, 85%);
+      border-radius: 10px;
+      /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+      margin: 10px;
+      
+    }
+    #pro {
+        animation: slideInFromBottom 1s ease-in;
+    }
+    
+
+    /* Style the product image */
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+      
+    }
+    
+    /* Style the product title and price */
+    /* h3, p {
+      margin: 10px 0
+     
+    } */
+    
+    /* Style the button to show/hide the description */
+    button {
+      padding: 10px;
+      background-color: #746733;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    
+    /* Style the product description */
+    p.description {
+      display: none;
+      margin-top: 10px;
+    }
+    </style>
+
+</head>
+<body>
+    <section class="docs-main my-4" >
+        <div class="container grid" style="background-color: #ece9d6;">
+            <div class="card bg-light p-3" >
+                <h3 class="my-2"><a href="#" id="mylink">Products</a></h3>
+                <h3 class="my-2"><a href="try2.html">Concerns</a></h3>
+                <h3 class="my-2">Crops</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Rabi</a></li>
+							<li><a href="#">Kharif</a></li>
+                    </ul>
+                </nav>
+                
+                <h3 class="my-2">Dealers</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Punjab</a></li>
+							<li><a href="#">Sindh</a></li>
+							<li><a href="#">KPK</a></li>
+							<li><a href="#">Balochistan</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="card" id="myDiv" style="background-color:#a09873;">
+                <div id="pro" style="background-color: #d5caa0;">
+                    <img src="1....jpg" alt="Product 1" width="200">
+                    <h3>Product 1</h3>
+                    <p>$19.99</p>
+                    <button onclick="toggleDescription('description1')">Show Description</button>
+                    <p id="description1" style="display:none">Description of Product 1</p>
+                </div >
+                <div id="pro" style="background-color: #d5caa0;">
+                    <img src="2....jpg" alt="Product 2" width="200">
+                    <h3>Product 2</h3>
+                    <p>$29.99</p>
+                    <button onclick="toggleDescription('description2')">Show Description</button>
+                    <p id="description2" style="display:none">Description of Product 2</p>
+                </div>
+                <script>
+                    // JavaScript function to toggle product descriptions
+                    function toggleDescription(descriptionId) {
+                        var description = document.getElementById(descriptionId);
+                        var button = description.previousElementSibling;
+                        if (description.style.display === 'none') {
+                            description.style.display = 'block';
+                            button.innerText = 'Hide Description';
+                        } else {
+                            description.style.display = 'none';
+                            button.innerText = 'Show Description';
+                        }
+                    }
+                </script>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

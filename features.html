@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AgriFert | Innovative farm solutions</title>
+
+    <style>
+        .card-flex:hover {
+                  box-shadow: 10 18px 116px 10 #50be68;
+                  
+                }
+
+         
+                
+                /* chatbox */
+.chat-container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+ 
+}
+
+
+.navbar ul a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+ 
+ 
+
+.chat-header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  
+}
+.chat-messages {
+  height: 300px;
+  padding: 10px;
+  overflow-y:auto;
+}
+.message {
+  margin-bottom: 10px;
+}
+
+.chat-input {
+  padding: 10px;
+  display: flex;
+  height: 50px;
+}
+
+/* FAQS */
+
+
+
+
+.faqs{
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+}
+.FAQ-questions{
+  height: 300px;
+  padding: 10px;
+  overflow-y:auto;
+}
+.FAQ-questions::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: Set a background color if needed */
+}
+.questions {
+  margin-bottom: 10px;
+}
+
+ .features-sub-head .chat-container > div {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  /* width:fit-content; */
+}
+
+
+    </style>
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo"><a href="index.html"> <i class="fas fa-leaf fa-1x"></i>AgriFert.</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>   
+                    <li><a href="docs.html">Products</a></li>
+                    <li><a href="features.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Head -->
+    <section class="features-head bg-primary py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="xl">AgriFert</h1>
+                <p class="lead">
+                 is a leading fertilizers company dedicated to providing high-quality fertilizers and agricultural solutions to farmers worldwide. With a deep understanding of the agricultural industry and a commitment to innovation, we strive to contribute to the sustainable growth and productivity of agricultural practices.
+                </p>
+            </div>
+            <img src="images/server.png" alt="">
+        </div>
+    </section>
+
+
+
+    
+    <!-- Sub head -->
+    <section class="features-sub-head bg-light py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="md">Our Vision</h1>
+                <p>
+                    
+                    At AgriFert, our vision is to be the preferred partner of farmers, offering innovative fertilizers that enhance crop yields, improve soil health, and promote sustainable farming practices. We aim to play a vital role in ensuring food security and contributing to the well-being of farming communities.
+                    
+                    
+             </div>
+            <div>
+                <h1 class="md">Our Mission</h1>
+                Our mission is to develop and deliver cutting-edge fertilizers and agricultural solutions that optimize crop nutrition, promote efficient resource utilization, and protect the environment. We constantly invest in research and development to offer superior products that address the specific needs of different crops and soil conditions.</p>
+       
+            </div>
+            
+
+            <!-- <img src="images/server2.png" alt=""> -->
+        </div>
+    </section>
+
+    <section class="features-main my-2">
+        <div class="container grid">
+            <div   class="card flex" style="width: 35%; padding: 1px; margin: 1px; font-size: large; border-radius: 5px ;">
+                <i class="fa fa-envelope" style="font-size:36px"></i>
+
+                <!-- <i class="fas fa-solid fa-3x"></i> -->
+                <!-- <i class="fas fa-server fa-3x"></i> -->
+                <p>agrifert@gmail.com</p>
+            </div>
+
+            <div class="card flex" style="width: 35%; padding: 1px; margin: 1px; font-size: large; border-radius: 5px ;">
+                <i class="fa fa-phone" style="font-size:36px"></i>
+
+               
+                <p>+92-61632645716</p>
+            </div>
+
+
+        </div>
+    </section>
+
+   
+
+
+
+
+
+
+
+    <section class="features-sub-head py-3" style="background-color:rgba(117, 168, 104, 0.79)">
+        <div class="container grid chat-container">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h3>Chat</h3>
+                </div>
+                <div class="chat-messages">
+                    <div class="message">Hello! How can I assist you today?</div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="message-input" placeholder="Type your message...">
+                    
+                    <button id="send-button" style="margin-left: 20px; padding-left: 5px; padding-right: 5px;" >Send</button>
+                </div>
+            </div>
+             
+            <!-- FAQS -->
+    
+            <div class="container"  >
+                <div class="faqs" >
+                    <h3>FAQs</h3>
+                </div>
+                <div class="FAQ-questions" >
+                    <div class="questions">
+                        <h3>What types of fertilizers do you offer?</h3> 
+                        <p>We offer a wide range of fertilizers, including organic fertilizers, granular fertilizers, liquid fertilizers, and specialized blends for different types of crops. </p>
+                    <h3>How often should I apply fertilizer to my plants?</h3>
+                    <p>The frequency of fertilizer application depends on several factors, such as the type of plant, soil conditions, and growth stage.</p>
+                    <h3>Are your fertilizers safe for the environment?</h3>
+                    <p>Yes, our fertilizers are formulated to be environmentally friendly. We prioritize sustainability and strive to minimize the negative impact on ecosystems while promoting healthy plant growth.</p>
+                    
+                    
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>AgriFert.</h1>
+                <p>Copyright &copy; 2020</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="docs.html">Products</a></li>
+                    <li><a href="features.html">About Us</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

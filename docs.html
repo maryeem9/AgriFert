@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AgriFert | Innovative farm solutions</title>
+    <style>  /* Center the product list and add some margin */
+   
+  
+        /* Add some padding and a light gray background to each product */
+        #navv  {
+          padding: 20px;
+          /* background-color: hsl(128, 28%, 53%); */
+          border-radius: 10px;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          margin: 10px;
+          
+        }
+        .navbar ul a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+        
+        #pro {
+            animation: slideInFromBottom 1s ease-in;
+            border-radius: 10px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+        }
+        
+        /* Style the product image */
+        img {
+          display: block;
+          margin: 0 auto;
+          max-width: 100%;
+          height: auto;
+          
+        }
+        
+        /* Style the product title and price */
+        h3, p {
+          margin: 10px 0
+        }
+        
+        /* Style the button to show/hide the description */
+        button {
+          padding: 10px;
+          background-color: #746733;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-bottom: 10px;
+        }
+
+        #mc {
+            color: #fff;
+        }
+
+        /* Style the product description */
+        p.description {
+          display: none;
+          margin-top: 10px;
+        }
+
+        /* img grid */
+
+        
+         .grid-container {
+           display: grid;
+           grid-template-columns: repeat(6, 1fr);
+           grid-template-rows: repeat(2, 150px); /* Adjust the height to your desired value */
+           gap: 5px; /* Adjust this value to set the gap between grid items */
+           padding: 0%;
+           border: 0px;
+         }
+       
+         .grid-item {
+           width: 100%;
+           display: flex;
+          
+           /* align-items: center;
+           justify-content: center; */
+           
+         }
+       
+         .grid-item img {
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+         }
+
+
+
+        #navv::-webkit-scrollbar {
+            width: 0; /* Remove scrollbar space */
+            background: transparent; /* Optional: Set a background color if needed */
+        }
+        #navv {
+          width: 320px;
+        }
+        
+
+        
+
+
+       #myDiv {
+        width: 600px; /* fixed width */
+  height: 500px; /* fixed height */
+  overflow: auto; 
+       }
+       #myDiv::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: Set a background color if needed */
+}
+
+#mc {
+  color: #fff;
+
+}
+#mc a{
+  color: #fff;
+}
+#mc h3{
+  color: #fff;
+}
+.btn {
+  background-color:#d5caa0;
+  border: none;
+  cursor: pointer;
+}
+
+        </style>
+</head>
+<body>
+    <!-- Navbar -->
+
+    <div class="navbar" style="background-color: hsl(129,59%,40%);">
+        <div class="container flex" >
+            <h1 class="logo"><a href="index.html"> <i class="fas fa-leaf fa-1x"></i>AgriFert.</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>   
+                    <li><a href="docs.html">Products</a></li>
+                    <li><a href="features.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Head -->
+    <section class="docs-head bg-primary py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="xl">Products</h1>
+                <p class="lead">
+                    Fertilizing for a greener world.
+                </p>
+            </div>
+            <img src="images/docs.png" alt="">
+        </div>
+    </section>
+
+   
+
+    <!-- Docs main -->
+    <section class="docs-main my-4" >
+        <div class="container grid" id="mc" style="background-color: #ece9d6;  border-radius: 10px; " >
+            <div class="card bg-light p-3" id="navv" style="background-color: hsl(129,59%,40%);">
+                <h3 class="my-2" ><a href="docs.html" id="mylink">Products</a></h3>
+                <h3 class="my-2"><a href="concerns.html">Concerns</a></h3>
+                <h3 class="my-2">Crops</h3>
+                <nav>
+                    <ul>
+                        <li><a href="rabi.html">Rabi</a></li>
+							<li><a href="kharif.html">Kharif</a></li>
+                    </ul>
+                </nav>
+                
+                <h3 class="my-2" style="color: #fff;">Dealers</h3>
+                <nav>
+                    <ul>
+                        <li><a href="punjab.html">Punjab</a></li>
+							<li><a href="sindh.html">Sindh</a></li>
+							<li><a href="kpk.html">KPK</a></li>
+							<li><a href="balchistan.html">Balochistan</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="card" id="myDiv"  style="background-color:#a09873;">
+                <div id="pro" style="background-color: #d5caa0;">
+                    <img src="p1.jpg" alt="Product 1" style="height: 200px; width: 150px;">
+                    <h3 style="color: #6f683a; font-size:35px;">MOP</h3>
+                    <p style="color: #6f683a;">Rs.2,500</p>
+                    
+                    <button onclick="toggleDescription('description1')">Show Description</button>
+                  
+                    <div class="icon" style="justify-content: flex-end; display: flex;">
+
+                   <button class="btn"> <i style="font-size:48px; color: #6f683a;" class="fa">&#xf07a;</i></button>
+                   </div> 
+                    
+                    
+                    <p id="description1" style="display:none">Description of Product 1</p>
+                </div >
+                <div id="pro" style="background-color: #d5caa0;">
+                    <img src="p2.jpg" alt="Product 2" style="height: 200px; width: 150px;">
+                    <h3 style="color: #6f683a; font-size:35px;">Zarkhez</h3>
+                    <p style="color: #6f683a;">Rs.2,600</p>
+                    <button onclick="toggleDescription('description2')">Show Description</button>
+
+                    <div class="icon" style="justify-content: flex-end; display: flex;">
+
+                      <button class="btn"> <i style="font-size:48px; color: #6f683a;" class="fa">&#xf07a;</i></button>
+                     
+                    </div> 
+                    <p id="description2" style="display:none">Description of Product 2</p>
+                </div>
+                <div id="pro" style="background-color: #d5caa0;">
+                  <img src="p3.jpg" alt="Product 2" style="height: 200px; width: 150px;">
+                  <h3 style="color: #6f683a; font-size:35px;">NP-plus</h3>
+                  <p style="color: #6f683a;">Rs.5,000</p>
+                  <button onclick="toggleDescription('description2')">Show Description</button>
+
+
+                  <div class="icon" style="justify-content: flex-end; display: flex;">
+
+                    <button class="btn"> <i style="font-size:48px; color: #6f683a;" class="fa">&#xf07a;</i></button>
+                   
+                  </div> 
+                  <p id="description2" style="display:none">Description of Product 2</p>
+              </div>
+              <div id="pro" style="background-color: #d5caa0;">
+                <img src="p4.jpg" alt="Product 2" style="height: 200px; width: 150px;">
+                <h3 style="color: #6f683a; font-size:35px;">Amonium Sulphate</h3>
+                <p style="color: #6f683a;">Rs.3,700</p>
+                <button onclick="toggleDescription('description2')">Show Description</button>
+                <div class="icon" style="justify-content: flex-end; display: flex;">
+
+                  <button class="btn"> <i style="font-size:48px; color: #6f683a;" class="fa">&#xf07a;</i></button>
+                 
+                </div>
+                <p id="description2" style="display:none">Description of Product 2</p>
+            </div>
+            <div id="pro" style="background-color: #d5caa0;">
+              <img src="p5.jpg" alt="Product 2" style="height: 200px; width: 150px;">
+              <h3 style="color: #6f683a; font-size:35px;">urea 46</h3>
+              <p style="color: #6f683a;">Rs.6,700</p>
+              <button onclick="toggleDescription('description2')">Show Description</button>
+              <div class="icon" style="justify-content: flex-end; display: flex;">
+
+                <button class="btn"> <i style="font-size:48px; color: #6f683a;" class="fa">&#xf07a;</i></button>
+               
+              </div> 
+              <p id="description2" style="display:none">Description of Product 2</p>
+          </div>
+                <script>
+                    // JavaScript function to toggle product descriptions
+                    function toggleDescription(descriptionId) {
+                        var description = document.getElementById(descriptionId);
+                        var button = description.previousElementSibling;
+                        if (description.style.display === 'none') {
+                            description.style.display = 'block';
+                            button.innerText = 'Hide Description';
+                        } else {
+                            description.style.display = 'none';
+                            button.innerText = 'Show Description';
+                        }
+                    }
+                </script>
+
+            </div>
+        </div>
+    </section>
+ 
+ 
+    <div class="grid-container">
+        <div class="grid-item">
+          <img src="engin-akyurt-eb26eV-ys_k-unsplash.jpg" alt="Photo 1">
+        </div>
+        <div class="grid-item">
+          <img src="lars-blankers-B0s3Xndk6tw-unsplash (1).jpg" alt="Photo 2">
+        </div>
+        <div class="grid-item">
+          <img src="nathan-nugent-6AAptb2kBak-unsplash.jpg" alt="Photo 3">
+        </div>
+        <div class="grid-item">
+          <img src="wouter-supardi-salari-HE_MjmWh9eQ-unsplash.jpg" alt="Photo 4">
+        </div>
+        <div class="grid-item">
+          <img src="mirko-fabian-ic4ibOnMguQ-unsplash.jpg" alt="Photo 5">
+        </div>
+        <div class="grid-item">
+          <img src="jen-gunter-A4BBdJQu2co-unsplash.jpg" alt="Photo 6">
+        </div>
+
+        <div class="grid-item">
+          <img src="goh-rhy-yan-CCxWLAx0qmk-unsplash.jpg" alt="Photo 7">
+        </div>
+
+        <div class="grid-item">
+          <img src="victoria-priessnitz-IPuuhSmsFIc-unsplash.jpg" alt="Photo 8">
+        </div>
+
+
+        <div class="grid-item">
+          <img src="adeel-shabir-lA5IQaKxetw-unsplash.jpg" alt="Photo 9">
+        </div>
+
+        <div class="grid-item">
+          <img src="juno-jo-Sp67-UQeynY-unsplash.jpg" alt="Photo 10">
+        </div>
+
+        <div class="grid-item">
+          <img src="vipul-borade-FvvgvCO-0gI-unsplash.jpg" alt="Photo 11">
+        </div>
+
+        <div class="grid-item">
+          <img src="shelley-pauls-t4X660oKiYs-unsplash.jpg" alt="Photo 10">
+        </div>
+      </div>
+
+    
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>AgriFert.</h1>
+                <p>Copyright &copy; 2020</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="docs.html">Products</a></li>
+                    <li><a href="features.html">About Us</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+      
+          </div>
+    </footer>
+</body>
+</html>
